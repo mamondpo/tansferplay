@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({extended: false}));    // parse application/x-www
 app.use(bodyParser.json());    // parse application/json
 app.use(methodOverride());                  // simulate DELETE and PUT
 
-var server_port = process.env.TRIKATUKA_PORT || 80,
+var server_port = process.env.TRIKATUKA_PORT || 8080,
     server_ip_address = '0.0.0.0';
 
 server.listen(server_port, server_ip_address);
